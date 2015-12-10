@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+
+class Settings {
+    static let initialLifePoints = 5
+    static let turnsBetweenZombieSpawn = 5
+    static let initialZombiesNumber = 3
+}
+
+enum Direction {
+    case North
+    case South
+    case East
+    case West
+}

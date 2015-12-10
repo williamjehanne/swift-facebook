@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3742FADBCD780D08D19DF42A /* Pods_Zombie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B14F28EFA6E3DC06D70C5A5 /* Pods_Zombie.framework */; };
 		4662CE5E1C176D4800A7D953 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4662CE5D1C176D4800A7D953 /* AppDelegate.swift */; };
 		4662CE601C176D4800A7D953 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4662CE5F1C176D4800A7D953 /* ViewController.swift */; };
 		4662CE631C176D4800A7D953 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4662CE611C176D4800A7D953 /* Main.storyboard */; };
 		4662CE651C176D4800A7D953 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4662CE641C176D4800A7D953 /* Assets.xcassets */; };
 		4662CE681C176D4800A7D953 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4662CE661C176D4800A7D953 /* LaunchScreen.storyboard */; };
+		4662CE701C176D8600A7D953 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4662CE6F1C176D8600A7D953 /* Board.swift */; };
+		4662CE741C1791D300A7D953 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4662CE731C1791D300A7D953 /* Settings.swift */; };
+		4662CE761C17932300A7D953 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4662CE751C17932300A7D953 /* Characters.swift */; };
+		4662CE781C18FD0900A7D953 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4662CE771C18FD0900A7D953 /* MenuViewController.swift */; };
+		4662CE7C1C1901C500A7D953 /* zom.png in Resources */ = {isa = PBXBuildFile; fileRef = 4662CE7B1C1901C500A7D953 /* zom.png */; };
+		CFD400801C198108001D39BD /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD4007F1C198108001D39BD /* FBSDKLoginKit.framework */; };
+		CFD400821C198111001D39BD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD400811C198111001D39BD /* Bolts.framework */; };
+		CFD400841C198143001D39BD /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD400831C198143001D39BD /* FBSDKCoreKit.framework */; };
+		CFD400861C198E06001D39BD /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD400851C198E06001D39BD /* FBSDKShareKit.framework */; };
+		CFD400881C19CD23001D39BD /* scoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD400871C19CD23001D39BD /* scoreController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,20 @@
 		4662CE641C176D4800A7D953 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4662CE671C176D4800A7D953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4662CE691C176D4800A7D953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4662CE6F1C176D8600A7D953 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		4662CE731C1791D300A7D953 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		4662CE751C17932300A7D953 /* Characters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		4662CE771C18FD0900A7D953 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		4662CE7B1C1901C500A7D953 /* zom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zom.png; sourceTree = "<group>"; };
+		4B14F28EFA6E3DC06D70C5A5 /* Pods_Zombie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zombie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5288D3372CEC09708FEE100D /* Pods-Zombie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zombie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zombie/Pods-Zombie.release.xcconfig"; sourceTree = "<group>"; };
+		CFD4007E1C197328001D39BD /* Zombie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Zombie-Bridging-Header.h"; sourceTree = "<group>"; };
+		CFD4007F1C198108001D39BD /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "Pods/../build/Debug-iphoneos/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		CFD400811C198111001D39BD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "Pods/../build/Debug-iphoneos/Bolts.framework"; sourceTree = "<group>"; };
+		CFD400831C198143001D39BD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "Pods/../build/Debug-iphoneos/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		CFD400851C198E06001D39BD /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "Pods/../build/Debug-iphoneos/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		CFD400871C19CD23001D39BD /* scoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scoreController.swift; sourceTree = "<group>"; };
+		E9BC54416A8562874C6CBCA2 /* Pods-Zombie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zombie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zombie/Pods-Zombie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +54,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFD400861C198E06001D39BD /* FBSDKShareKit.framework in Frameworks */,
+				CFD400841C198143001D39BD /* FBSDKCoreKit.framework in Frameworks */,
+				CFD400821C198111001D39BD /* Bolts.framework in Frameworks */,
+				CFD400801C198108001D39BD /* FBSDKLoginKit.framework in Frameworks */,
+				3742FADBCD780D08D19DF42A /* Pods_Zombie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +70,8 @@
 			children = (
 				4662CE5C1C176D4800A7D953 /* Zombie */,
 				4662CE5B1C176D4800A7D953 /* Products */,
+				EB82576E3C9A188A4130E076 /* Pods */,
+				788E9DE37C082AEBB7104AD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +86,42 @@
 		4662CE5C1C176D4800A7D953 /* Zombie */ = {
 			isa = PBXGroup;
 			children = (
+				4662CE7B1C1901C500A7D953 /* zom.png */,
+				4662CE6F1C176D8600A7D953 /* Board.swift */,
 				4662CE5D1C176D4800A7D953 /* AppDelegate.swift */,
+				CFD4007E1C197328001D39BD /* Zombie-Bridging-Header.h */,
 				4662CE5F1C176D4800A7D953 /* ViewController.swift */,
 				4662CE611C176D4800A7D953 /* Main.storyboard */,
 				4662CE641C176D4800A7D953 /* Assets.xcassets */,
 				4662CE661C176D4800A7D953 /* LaunchScreen.storyboard */,
 				4662CE691C176D4800A7D953 /* Info.plist */,
+				4662CE731C1791D300A7D953 /* Settings.swift */,
+				4662CE751C17932300A7D953 /* Characters.swift */,
+				4662CE771C18FD0900A7D953 /* MenuViewController.swift */,
+				CFD400871C19CD23001D39BD /* scoreController.swift */,
 			);
 			path = Zombie;
+			sourceTree = "<group>";
+		};
+		788E9DE37C082AEBB7104AD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFD400851C198E06001D39BD /* FBSDKShareKit.framework */,
+				CFD400831C198143001D39BD /* FBSDKCoreKit.framework */,
+				CFD400811C198111001D39BD /* Bolts.framework */,
+				CFD4007F1C198108001D39BD /* FBSDKLoginKit.framework */,
+				4B14F28EFA6E3DC06D70C5A5 /* Pods_Zombie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB82576E3C9A188A4130E076 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9BC54416A8562874C6CBCA2 /* Pods-Zombie.debug.xcconfig */,
+				5288D3372CEC09708FEE100D /* Pods-Zombie.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4662CE6C1C176D4800A7D953 /* Build configuration list for PBXNativeTarget "Zombie" */;
 			buildPhases = (
+				EFE2AA0F029347CF54E082BE /* Check Pods Manifest.lock */,
 				4662CE561C176D4800A7D953 /* Sources */,
 				4662CE571C176D4800A7D953 /* Frameworks */,
 				4662CE581C176D4800A7D953 /* Resources */,
+				C33D5E75B38E7A4519838DC4 /* Embed Pods Frameworks */,
+				64BE6C80105D86620A21C485 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,18 +187,72 @@
 			files = (
 				4662CE681C176D4800A7D953 /* LaunchScreen.storyboard in Resources */,
 				4662CE651C176D4800A7D953 /* Assets.xcassets in Resources */,
+				4662CE7C1C1901C500A7D953 /* zom.png in Resources */,
 				4662CE631C176D4800A7D953 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64BE6C80105D86620A21C485 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zombie/Pods-Zombie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C33D5E75B38E7A4519838DC4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zombie/Pods-Zombie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFE2AA0F029347CF54E082BE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4662CE561C176D4800A7D953 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4662CE701C176D8600A7D953 /* Board.swift in Sources */,
+				4662CE781C18FD0900A7D953 /* MenuViewController.swift in Sources */,
 				4662CE601C176D4800A7D953 /* ViewController.swift in Sources */,
+				4662CE741C1791D300A7D953 /* Settings.swift in Sources */,
+				CFD400881C19CD23001D39BD /* scoreController.swift in Sources */,
+				4662CE761C17932300A7D953 /* Characters.swift in Sources */,
 				4662CE5E1C176D4800A7D953 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,23 +362,39 @@
 		};
 		4662CE6D1C176D4800A7D953 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9BC54416A8562874C6CBCA2 /* Pods-Zombie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Zombie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kopa.Zombie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Zombie/Zombie-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Zombie-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		4662CE6E1C176D4800A7D953 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5288D3372CEC09708FEE100D /* Pods-Zombie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Zombie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kopa.Zombie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Zombie/Zombie-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Zombie-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -284,6 +417,7 @@
 				4662CE6E1C176D4800A7D953 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
