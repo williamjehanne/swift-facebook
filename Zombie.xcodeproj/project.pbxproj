@@ -23,6 +23,8 @@
 		CFD400841C198143001D39BD /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD400831C198143001D39BD /* FBSDKCoreKit.framework */; };
 		CFD400861C198E06001D39BD /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD400851C198E06001D39BD /* FBSDKShareKit.framework */; };
 		CFD400881C19CD23001D39BD /* scoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD400871C19CD23001D39BD /* scoreController.swift */; };
+		CFD4008A1C19D97D001D39BD /* ScoreSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD400891C19D97D001D39BD /* ScoreSingleton.swift */; };
+		CFD4008C1C19D9CF001D39BD /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4008B1C19D9CF001D39BD /* Score.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		CFD400831C198143001D39BD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "Pods/../build/Debug-iphoneos/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		CFD400851C198E06001D39BD /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "Pods/../build/Debug-iphoneos/FBSDKShareKit.framework"; sourceTree = "<group>"; };
 		CFD400871C19CD23001D39BD /* scoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scoreController.swift; sourceTree = "<group>"; };
+		CFD400891C19D97D001D39BD /* ScoreSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreSingleton.swift; sourceTree = "<group>"; };
+		CFD4008B1C19D9CF001D39BD /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		E9BC54416A8562874C6CBCA2 /* Pods-Zombie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zombie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zombie/Pods-Zombie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +103,8 @@
 				4662CE751C17932300A7D953 /* Characters.swift */,
 				4662CE771C18FD0900A7D953 /* MenuViewController.swift */,
 				CFD400871C19CD23001D39BD /* scoreController.swift */,
+				CFD400891C19D97D001D39BD /* ScoreSingleton.swift */,
+				CFD4008B1C19D9CF001D39BD /* Score.swift */,
 			);
 			path = Zombie;
 			sourceTree = "<group>";
@@ -253,6 +259,8 @@
 				4662CE741C1791D300A7D953 /* Settings.swift in Sources */,
 				CFD400881C19CD23001D39BD /* scoreController.swift in Sources */,
 				4662CE761C17932300A7D953 /* Characters.swift in Sources */,
+				CFD4008A1C19D97D001D39BD /* ScoreSingleton.swift in Sources */,
+				CFD4008C1C19D9CF001D39BD /* Score.swift in Sources */,
 				4662CE5E1C176D4800A7D953 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
