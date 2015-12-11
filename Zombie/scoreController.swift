@@ -8,12 +8,14 @@
 
 import Foundation
 import UIKit
+import CoreData
 import Alamofire
 
 class ScoreController: UITableViewController, DataProtocol {
     
     @IBOutlet var myTableView: UITableView!
-    var scores:[Score]! = []
+    var scores = [DataScore]()
+    var dataScores = [DataScore]()
     let data = ScoreSingleton()
     
     override func viewDidLoad() {
@@ -24,10 +26,35 @@ class ScoreController: UITableViewController, DataProtocol {
     }
     
     func didRetrieveData(scores: [Score]){
-        print("je suis ici")
-        self.scores = scores
-        print(self.scores)
+        self.savescore(scores)
         self.myTableView.reloadData()
+    }
+    
+    func savescore(scores: [Score]) {
+        //1
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext
+        
+        for s in scores {
+            //2
+            let score = NSEntityDescription.insertNewObjectForEntityForName("DataScore", inManagedObjectContext: managedContext) as? DataScore
+            
+            let player = NSEntityDescription.insertNewObjectForEntityForName("DataPlayer", inManagedObjectContext: managedContext) as? DataPlayer
+            
+            score?.score = String(s.score)
+            player!.name = String(s.player!)
+            score?.player = player
+            
+            //4
+            do {
+                try managedContext.save()
+                //5
+                self.dataScores.append(score!)
+            } catch let error as NSError  {
+                print("Could not save \(error), \(error.userInfo)")
+            }
+        }
     }
     
     func goBack () {
@@ -35,18 +62,18 @@ class ScoreController: UITableViewController, DataProtocol {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.scores!.count
+        return self.dataScores.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:UITableViewCell? = self.myTableView.dequeueReusableCellWithIdentifier("cellule") as UITableViewCell?
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellule")
         
-        if (cell == nil) {
-            cell = UITableViewCell()
-        }
+        let score = dataScores[indexPath.row]
         
-        cell!.textLabel?.text = self.scores[indexPath.row].player
-        cell!.detailTextLabel?.text = String(self.scores[indexPath.row].score)
+        cell!.textLabel!.text = score.score
+        cell!.detailTextLabel!.text = score.player!.name!
+       
+
         
         return cell!
     }

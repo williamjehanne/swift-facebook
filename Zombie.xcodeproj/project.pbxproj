@@ -25,6 +25,11 @@
 		CFD400881C19CD23001D39BD /* scoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD400871C19CD23001D39BD /* scoreController.swift */; };
 		CFD4008A1C19D97D001D39BD /* ScoreSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD400891C19D97D001D39BD /* ScoreSingleton.swift */; };
 		CFD4008C1C19D9CF001D39BD /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4008B1C19D9CF001D39BD /* Score.swift */; };
+		CFD4008F1C1ABE5D001D39BD /* Score.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFD4008D1C1ABE5D001D39BD /* Score.xcdatamodeld */; };
+		CFD400A21C1B14D7001D39BD /* DataPlayer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4009E1C1B14D7001D39BD /* DataPlayer+CoreDataProperties.swift */; };
+		CFD400A31C1B14D7001D39BD /* DataPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD4009F1C1B14D7001D39BD /* DataPlayer.swift */; };
+		CFD400A41C1B14D7001D39BD /* DataScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD400A01C1B14D7001D39BD /* DataScore+CoreDataProperties.swift */; };
+		CFD400A51C1B14D7001D39BD /* DataScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD400A11C1B14D7001D39BD /* DataScore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,11 @@
 		CFD400871C19CD23001D39BD /* scoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scoreController.swift; sourceTree = "<group>"; };
 		CFD400891C19D97D001D39BD /* ScoreSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreSingleton.swift; sourceTree = "<group>"; };
 		CFD4008B1C19D9CF001D39BD /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		CFD4008E1C1ABE5D001D39BD /* Score.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Score.xcdatamodel; sourceTree = "<group>"; };
+		CFD4009E1C1B14D7001D39BD /* DataPlayer+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataPlayer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CFD4009F1C1B14D7001D39BD /* DataPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPlayer.swift; sourceTree = "<group>"; };
+		CFD400A01C1B14D7001D39BD /* DataScore+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CFD400A11C1B14D7001D39BD /* DataScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataScore.swift; sourceTree = "<group>"; };
 		E9BC54416A8562874C6CBCA2 /* Pods-Zombie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zombie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zombie/Pods-Zombie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +100,10 @@
 		4662CE5C1C176D4800A7D953 /* Zombie */ = {
 			isa = PBXGroup;
 			children = (
+				CFD4009E1C1B14D7001D39BD /* DataPlayer+CoreDataProperties.swift */,
+				CFD4009F1C1B14D7001D39BD /* DataPlayer.swift */,
+				CFD400A01C1B14D7001D39BD /* DataScore+CoreDataProperties.swift */,
+				CFD400A11C1B14D7001D39BD /* DataScore.swift */,
 				4662CE7B1C1901C500A7D953 /* zom.png */,
 				4662CE6F1C176D8600A7D953 /* Board.swift */,
 				4662CE5D1C176D4800A7D953 /* AppDelegate.swift */,
@@ -105,6 +119,7 @@
 				CFD400871C19CD23001D39BD /* scoreController.swift */,
 				CFD400891C19D97D001D39BD /* ScoreSingleton.swift */,
 				CFD4008B1C19D9CF001D39BD /* Score.swift */,
+				CFD4008D1C1ABE5D001D39BD /* Score.xcdatamodeld */,
 			);
 			path = Zombie;
 			sourceTree = "<group>";
@@ -253,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFD400A51C1B14D7001D39BD /* DataScore.swift in Sources */,
+				CFD400A21C1B14D7001D39BD /* DataPlayer+CoreDataProperties.swift in Sources */,
 				4662CE701C176D8600A7D953 /* Board.swift in Sources */,
 				4662CE781C18FD0900A7D953 /* MenuViewController.swift in Sources */,
 				4662CE601C176D4800A7D953 /* ViewController.swift in Sources */,
@@ -261,7 +278,10 @@
 				4662CE761C17932300A7D953 /* Characters.swift in Sources */,
 				CFD4008A1C19D97D001D39BD /* ScoreSingleton.swift in Sources */,
 				CFD4008C1C19D9CF001D39BD /* Score.swift in Sources */,
+				CFD4008F1C1ABE5D001D39BD /* Score.xcdatamodeld in Sources */,
+				CFD400A31C1B14D7001D39BD /* DataPlayer.swift in Sources */,
 				4662CE5E1C176D4800A7D953 /* AppDelegate.swift in Sources */,
+				CFD400A41C1B14D7001D39BD /* DataScore+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +448,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CFD4008D1C1ABE5D001D39BD /* Score.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CFD4008E1C1ABE5D001D39BD /* Score.xcdatamodel */,
+			);
+			currentVersion = CFD4008E1C1ABE5D001D39BD /* Score.xcdatamodel */;
+			path = Score.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4662CE521C176D4800A7D953 /* Project object */;
 }

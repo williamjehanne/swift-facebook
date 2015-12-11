@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F27" minimumToolsVersion="Xcode 7.0">
+    <entity name="DataPlayer" representedClassName="DataPlayer" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="scores" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DataScore" inverseName="player" inverseEntity="DataScore" syncable="YES"/>
+    </entity>
+    <entity name="DataScore" representedClassName="DataScore" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="player" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DataPlayer" inverseName="scores" inverseEntity="DataPlayer" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DataScore" positionX="-342" positionY="-99" width="128" height="88"/>
+        <element name="DataPlayer" positionX="-54" positionY="18" width="128" height="73"/>
+    </elements>
+</model>
